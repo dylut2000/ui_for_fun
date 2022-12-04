@@ -9,13 +9,17 @@
 }
 
 :root {
+  --blue: #f8faff;
   --blue50: #e2e9f9;
   --blue100: #87a0ce;
-  --dark50: #373c477b;
+  --dark50: #c6cad2;
   --dark: #373c47;
   --white: #fff;
   --body-padding: 8rem;
   --transition: ease 0.3s;
+  --radius50: 0.2rem;
+  --radius100: 0.5rem;
+  --radius150: 1rem;
 }
 
 body {
@@ -26,7 +30,7 @@ body {
   padding: var(--body-padding);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 header {
@@ -54,7 +58,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   border: solid 1px var(--blue50);
-  border-radius: 0.2rem;
+  border-radius: var(--radius50);
 }
 
 .search input {
@@ -65,7 +69,7 @@ nav {
   display: inline-block;
   cursor: pointer;
   padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius100);
   transition: var(--transition);
 }
 
@@ -76,7 +80,89 @@ nav {
 }
 
 .link .active {
-    background-color: var(--blue100);
-    color: var(--white);
-    letter-spacing: 0.1rem;
-  }
+  background-color: var(--blue100);
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+main {
+  flex: 1;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 15rem);
+  grid-auto-rows: 15rem;
+}
+
+main .card {
+  border: solid 1px var(--white);
+  background-color: var(--blue);
+  border-radius: var(--radius100);
+  user-select: none;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+main .card:hover {
+  border: solid 1px var(--blue100);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
+main .active {
+  border: solid 1px var(--blue100);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
+main .card img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: var(--transition);
+}
+
+main .card:hover img {
+  opacity: 1;
+  transform: scale(1.07);
+}
+
+main .card .details {
+  padding-top: 1rem;
+}
+
+main .card .details .fullname {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+main .card .details .othername {
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+span.skill {
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  margin-top: 0.2rem;
+  text-transform: lowercase;
+  border-radius: var(--radius150);
+  border: solid 1px var(--dark50);
+  color: var(--blue100);
+  font-weight: bold;
+}
