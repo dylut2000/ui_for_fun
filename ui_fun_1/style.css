@@ -23,6 +23,7 @@
 }
 
 body {
+  width: 100%;
   height: 100vh;
   font-family: sans-serif;
   color: var(--dark);
@@ -264,4 +265,9 @@ span.skill {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
 }
