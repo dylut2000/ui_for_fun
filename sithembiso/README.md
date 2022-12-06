@@ -4,4 +4,4 @@ Tech: HTML CSS
 
 by: [sithembiso](https://github.com/sthezahadebe-jpg)
 
-![ui_fun_1]()
+![ui_fun_1](./img/weather.png)
