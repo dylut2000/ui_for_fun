@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color:#EDE6D6;
+    color: rgb(129, 11, 11);
+    text-align: center;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(108, 18, 18);
+    margin: left 70px;
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
