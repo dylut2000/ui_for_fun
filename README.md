@@ -20,4 +20,10 @@ By: [Hardy Lutula](https://twitter.com/dylut2000)
 
 Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-users-list-card-day-1542)
 
+<br />
 
+# Bongumusa-Design
+
+Tech: HTML CSS
+
+by: [Bongumusa](https://github.com/Bongumusa9)
