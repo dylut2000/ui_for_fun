@@ -6,4 +6,4 @@ Tech: HTML CSS
 by: [Lucky1](https://github.com/luckymogale64)
 
 
-![ui_fun_1](./img/ui_fun_1.png)
+![ui_fun_1](img/lucky.png)
