@@ -25,3 +25,18 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+/*header/Logo Titile*/
+.header{
+    padding: 60px;
+    text-align: center;
+    background-image: url(https://www.woolworths.co.za/images/elasticera/products/alternate/2019-10-17/6009214784656_detail.jpg);
+    color: rgb(63, 12, 12);
+    font-size: 50px;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+/* page content*/
+.content {padding: 20px;}
