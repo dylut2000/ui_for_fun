@@ -9,12 +9,12 @@
   }
   
   :root {
-    --blue: #f8faff;
-    --blue50: #e2e9f9;
-    --blue100: #87a0ce;
-    --dark50: #c6cad2;
+    --blue: #7e7f81;
+    --blue50: #527ad5;
+    --blue100: #edeff2;
+    --dark50: #374050;
     --dark: #373c47;
-    --white: #fff;
+    --white: rgb(230, 224, 224);
     --body-padding: 8rem;
     --transition: ease 0.3s;
     --radius50: 0.2rem;
