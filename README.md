@@ -24,6 +24,6 @@ Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-users-list
 
 # Opiwe-Design
 
-Tech: JavaScript, HTML, CSS
+Tech: HTML, CSS
 
 by: [Opiwe Jojo Pastor](https://github.com/Opiwe)
