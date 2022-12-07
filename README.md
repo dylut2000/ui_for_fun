@@ -22,8 +22,19 @@ Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-users-list
 
 <br />
 
+
 # Opiwe-Design
 
 Tech: HTML, CSS
 
 by: [Opiwe Jojo Pastor](https://github.com/Opiwe)
+
+<br />
+
+# UI_FUN_2
+Tech: HTML CSS
+
+By: [Hardy Lutula](https://twitter.com/dylut2000)
+
+Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-search-categories-day-1552)
+
