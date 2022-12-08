@@ -44,7 +44,7 @@ Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-search-cat
 
 # ui_fun_3
 
-Tech: JS, JQUERY, HTML, CSS
+Tech: JS, JQUERY, HTML, CSS, BOOTSTRAP, font-awesome4
 
 **ui_fun_3:** it a simple ui for a chatbot component.
 
@@ -53,4 +53,5 @@ By: [Hardy](https://twitter.com/dylut2000)
 Link: [https://dylut2000.github.io/chatUi/](https://dylut2000.github.io/chatUi/)
 
 Inspired by: [My old repo](https://github.com/dylut2000/chatUi)
+
 
