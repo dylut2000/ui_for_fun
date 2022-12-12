@@ -21,3 +21,11 @@ By: [Hardy Lutula](https://twitter.com/dylut2000)
 Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-users-list-card-day-1542)
 
 
+# Mduduzi
+
+Tech: HTML CSS
+
+by: [Mduduzi](https://github.com/mduduzi01)
+
+
+
