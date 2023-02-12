@@ -54,4 +54,10 @@ Link: [https://dylut2000.github.io/chatUi/](https://dylut2000.github.io/chatUi/)
 
 Inspired by: [My old repo](https://github.com/dylut2000/chatUi)
 
+# search
 
+Tech: HTML, CSS
+
+By: [Hardy](https://twitter.com/dylut2000)
+
+Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-search-categories-day-1552)

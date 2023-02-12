@@ -1,0 +1,150 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --bg: #f3f3fa;
+  --dark50: #f0eef7;
+  --primary: #34255a;
+  --white: #fff;
+  --transition: all 0.5s ease-in-out;
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+.card {
+  width: 50rem;
+  height: 30rem;
+  overflow: hidden;
+  padding: 5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  -webkit-box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+  -moz-box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+  box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search {
+  border: solid 1px var(--dark50);
+  padding: 0.5rem 1rem;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  border: none;
+  flex: 1;
+}
+
+button {
+  width: 10rem;
+  height: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  flex: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+
+.item:hover {
+  transform: rotate(4deg);
+  cursor: pointer;
+  -webkit-box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+  -moz-box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+  box-shadow: -9px 19px 45px -18px rgba(132, 140, 156, 1);
+}
+
+.furniture {
+  background-color: #ffecec;
+}
+
+.property {
+  background-color: #f7ecff;
+}
+
+.job {
+  background-color: #ecf0ff;
+}
+
+.travel {
+  background-color: #d7f9f3;
+}
+
+.boot {
+  background-color: #e2ffd4;
+}
+
+.mc {
+  background-color: #ffffff;
+  border: solid 1px var(--dark50);
+}
+
+.econnomy {
+  background-color: #fff3c9;
+}
+
+.holiday {
+  background-color: #ffd9c9;
+}
+
+i {
+  font-size: 1.5rem;
+}
