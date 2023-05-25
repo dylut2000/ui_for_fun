@@ -7808,7 +7808,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: blue;
+  background-color: #0057c6;
 }
 
 .bg-secondary {
