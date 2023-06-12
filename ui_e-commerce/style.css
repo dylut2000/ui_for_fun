@@ -14,7 +14,7 @@
   --BG_WHITE: #fff;
   --GRAY-50: #6b6b6c;
   --GRAY-100: #242424;
-  --BLUE-50: #5382b7;
+  --BLUE-50: #4e7198;
   --TRANSITION-50: 0.3s ease-in-out;
   --TRANSITION-100: 0.5s ease-in-out;
   --TRANSITION-150: 2s ease-in-out;
@@ -25,24 +25,30 @@ body {
   background: var(--BG_WHITE);
   color: var(--GRAY-100);
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 /* NAVBAR */
 
 nav {
-  height: 4rem;
+  height: 5rem;
+  width: 100%;
   background-color: var(--BG-GRAY);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 1rem;
   font-weight: bold;
   font-weight: 900;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  z-index: 10;
 }
 
 nav .logo {
   font-size: 1.5rem;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   cursor: default;
   transition: var(--TRANSITION-150);
 }
@@ -56,5 +62,119 @@ nav svg {
 }
 
 nav:hover > .logo {
-  letter-spacing: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+/* section */
+section {
+  padding: 2rem 1rem;
+}
+
+/* intro */
+.intro {
+  padding-top: 8rem;
+  height: 100vh;
+  background-color: var(--BG-GRAY);
+}
+
+.intro .header {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.intro .details {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.intro .details .left p {
+  color: var(--GRAY-50);
+  word-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.intro .details .left button {
+  padding: 1rem 2rem;
+  border-color: var(--BLUE-50);
+  color: var(--BLUE-50);
+  border-radius: 0.5rem;
+  transition: var(--TRANSITION-50);
+  cursor: pointer;
+}
+
+.intro .details .left button:hover {
+  padding: 1rem 2rem;
+  border-color: var(--BLUE-50);
+  background-color: var(--BLUE-50);
+  color: var(--BG-GRAY);
+  border-radius: 0.5rem;
+  transition: var(--TRANSITION-50);
+}
+
+.intro .details .right img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* desktop style ******************************/
+@media only screen and (min-width: 700px) {
+  /* NAVBAR */
+
+  nav {
+    padding: 0 3rem;
+  }
+
+  nav .logo {
+    letter-spacing: 5px;
+  }
+
+  nav:hover > .logo {
+    letter-spacing: 1.5rem;
+  }
+
+  /* section */
+  section {
+    padding: 2rem 8rem;
+  }
+
+  .intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro .header {
+    font-size: 3rem;
+  }
+
+  .intro .details {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .intro .details .left {
+    flex: 1;
+  }
+
+  .intro .details .left p {
+    word-spacing: 8px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding-right: 8rem;
+  }
+
+  .intro .details .right img {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .intro .details .right {
+    flex: 1;
+  }
 }
