@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --BG-GRAY: #ebebeb;
+  --BG_WHITE: #fff;
+  --GRAY-50: #6b6b6c;
+  --GRAY-100: #242424;
+  --BLUE-50: #5382b7;
+  --TRANSITION-50: 0.3s ease-in-out;
+  --TRANSITION-100: 0.5s ease-in-out;
+  --TRANSITION-150: 2s ease-in-out;
+  --RADIUS: 0.5rem;
+}
+
+body {
+  background: var(--BG_WHITE);
+  color: var(--GRAY-100);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+  height: 4rem;
+  background-color: var(--BG-GRAY);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  cursor: default;
+  transition: var(--TRANSITION-150);
+}
+
+nav .cart {
+  cursor: pointer;
+}
+
+nav svg {
+  cursor: pointer;
+}
+
+nav:hover > .logo {
+  letter-spacing: 1.5rem;
+}
