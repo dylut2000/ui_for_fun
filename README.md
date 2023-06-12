@@ -61,3 +61,11 @@ Tech: HTML, CSS
 By: [Hardy](https://twitter.com/dylut2000)
 
 Inspired by [uidesigndaily.com](https://uidesigndaily.com/posts/figma-search-categories-day-1552)
+
+# ui_e-commerce
+
+Tech: HTML, CSS, JS
+
+By: [Hardy](https://twitter.com/dylut2000)
+
+Inspired by [https://za.pinterest.com](https://za.pinterest.com/pin/821625525782312392/)
