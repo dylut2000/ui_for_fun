@@ -25,7 +25,7 @@
 
       <div class="logo">ALPINE</div>
 
-      <div class="cart">Cart (<span>0</span>)</div>
+      <div class="cart" onclick="onOpenCartModal()">Cart (<span>0</span>)</div>
     </nav>
 
     <main>
@@ -70,7 +70,7 @@
         </ul>
       </div>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="product-item">
           <div class="product">
             <img
@@ -113,5 +113,14 @@
     </main>
 
     <footer></footer>
+
+    <div class="cartModal" id="cartModal">
+      <div class="cartModalContent" id="cartModalContent">
+        <div class="header">
+          <h1>MY CART (4)</h1>
+          <button onclick="onCloseCartModal()">X</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
