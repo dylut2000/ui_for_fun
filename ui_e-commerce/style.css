@@ -104,6 +104,11 @@ section {
   border-radius: 0.5rem;
   transition: var(--TRANSITION-50);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  margin: 0 auto;
 }
 
 .intro .details .left button:hover {
@@ -118,6 +123,129 @@ section {
 .intro .details .right img {
   width: 100%;
   border-radius: 0.5rem;
+}
+
+/* Filter */
+
+.filter {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.filter ul {
+}
+
+.filter li {
+  display: inline;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  transition: var(--TRANSITION-50);
+  border: solid 1px var(--BG_WHITE);
+}
+
+.filter li:hover {
+  border: solid 1px var(--GRAY-50);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.product-item {
+  border-radius: var(--RADIUS);
+  overflow: hidden;
+  transition: var(--TRANSITION-100);
+  position: relative;
+}
+
+.product-item button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--BG-GRAY);
+  color: var(--BLUE-50);
+  padding: 0.5rem 2rem;
+  border-color: var(--BLUE-50);
+  border-right: 0;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  margin-bottom: 1rem;
+  animation: cartBtnAnnimation var(--TRANSITION-100);
+  border-radius: var(--RADIUS) 0 0 var(--RADIUS);
+  transition: var(--TRANSITION-50);
+}
+
+.product-item button:hover {
+  background-color: var(--BLUE-50);
+  color: var(--BG-GRAY);
+  border-color: var(--BLUE-50);
+}
+
+@keyframes cartBtnAnnimation {
+  0% {
+    margin-right: -6rem;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+.product {
+  height: 25rem;
+  transition: var(--TRANSITION-100);
+}
+
+.product img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: var(--RADIUS);
+  border-top-right-radius: var(--RADIUS);
+}
+
+.product .details {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product .details .name {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.product .details .category {
+  font-size: 0.8rem;
+  color: var(--GRAY-50);
+  margin-top: 5px;
+}
+
+.product .details .price {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.product-item:hover {
+  background-color: var(--BG-GRAY);
+}
+
+.product-item:hover > .product {
+  transform: scale(0.9);
+}
+
+.product-item:hover > button {
+  display: block;
+}
+
+footer {
+  height: 10rem;
+  margin-top: 5rem;
 }
 
 /* desktop style ******************************/
@@ -172,6 +300,10 @@ section {
   .intro .details .right img {
     object-fit: cover;
     height: 500px;
+  }
+
+  .intro .details .left button {
+    margin: 0;
   }
 
   .intro .details .right {
