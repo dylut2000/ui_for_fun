@@ -39,7 +39,7 @@
               iste sed molestiae iusto.
             </p>
 
-            <button>
+            <button onclick="scrollToId(`filterSection`)">
               CHECK PRODUCTS
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +61,8 @@
           </div>
         </div>
       </section>
+
+      <div id="filterSection"></div>
 
       <div class="filter">
         <ul>
@@ -118,7 +120,7 @@
       <div class="cartModalContent" id="cartModalContent">
         <div class="header">
           <h1>MY CART (4)</h1>
-          <button onclick="onCloseCartModal()">X</button>
+          <button id="btn_closeCartModal">X</button>
         </div>
       </div>
     </div>

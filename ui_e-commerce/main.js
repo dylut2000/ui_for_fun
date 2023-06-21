@@ -1,17 +1,31 @@
 const productsDisplay = document.getElementById('products')
 const cartModal = document.getElementById('cartModal')
 const cartModalContent = document.getElementById('cartModalContent')
+const btn_closeCartModal = document.getElementById('btn_closeCartModal')
 
+// scroll to a specific id
+function scrollToId(sectionId) {
+  const id = document.getElementById(sectionId)
+  id.scrollIntoView({behavior: 'smooth'}, true)
+}
 
 // open cart modal
 function onOpenCartModal() {
-    cartModal.style.display = 'block'
+  cartModal.style.display = 'block'
 }
 
 // close cart modal
 function onCloseCartModal() {
-    cartModal.style.display = 'none'
+  cartModal.style.display = 'none'
 }
+
+// close modal after clicking X button from the cart
+btn_closeCartModal.addEventListener('click', onCloseCartModal)
+
+// close modal after clicking outside
+cartModal.addEventListener('click', (e) => {
+  if (e.target.id === 'cartModal') onCloseCartModal()
+})
 
 // display all products
 function onDisplayProduct() {
@@ -26,7 +40,8 @@ function onDisplayProduct() {
           <div class="product">
             <img
               src="${product.thumbnail}"
-              alt="product"
+              loading="lazy"
+              alt="${product.title}"
             />
             <div class="details">
               <div class="left">
@@ -59,7 +74,5 @@ function onDisplayProduct() {
     `
   }
 }
-
-
 
 onDisplayProduct()
